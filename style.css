@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+header.hero {
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a,
+.btn {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  background: #f50057;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(49, 237, 49);
+  color: #121212;
+  font-size: large;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.text .highlight {
+  color: #f50057;
+}
+
+.profile-pic img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+
+
+/* Services Section */
+.services {
+  background: linear-gradient(to bottom right, #0f0f0f, #1b1b1b);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 5px 4px #ff1717, 2px 0 5px blue;
+  font-size: 2.8rem;
+ /* color: #9137fe;
+  margin-bottom: 2.5rem; */
+}
+
+/* Service Cards Grid */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Individual Card */
+.service-card {
+  background: #1e1e2f;
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(145, 55, 254, 0.1),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+ box-shadow: 0 12px 24px rgba(145, 55, 254, 0.25),
+    0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+/* Entrance Animation */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+#animated-name {
+  opacity: 0;
+  animation: bounceIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    color: yellow;
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    color: red;
+  }
+}
+
+
+
+/* Navigation Link Hover Style */
+.nav-links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #f50057;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f50057;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* Portfolio Section*/
+.portfolio {
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Heading */
+.portfolio h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 5px 4px #ff1717, 2px 0 5px blue;
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+
+  font-size: 2.8rem;
+  /* margin-bottom: 2.5rem; */
+  color: #f5d8d8;
+  font-weight: 700;
+}
+
+/* Grid layout  projects */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* ek ek project card */
+.project {
+  background: #1e1e2f;
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(145, 55, 254, 0.1),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(145, 55, 254, 0.25),
+    0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Image styling */
+.project img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  border: 2px solid #9137fe30;
+}
+
+/* Project title */
+.project p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Project link */
+.project a {
+  color: #9137fe;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.project a:hover {
+  color: #c4a4ff;
+  text-decoration: underline;
+}

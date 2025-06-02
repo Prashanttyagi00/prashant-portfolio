@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 750px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.top-section {
+  background: white;
+  color: #6e001b;
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.top-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.top-section p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #6e001b, #b3002d);
+  color: white;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info {
+  flex: 1 1 300px;
+}
+
+.info h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.info .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info .tools {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.portfolio-btn {
+  background-color: #460014;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.portfolio-btn:hover {
+  background-color: #300010;
+}
+
+.photo img {
+  max-height: 200px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  background: #fff;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.social, .contact {
+  flex: 1 1 200px;
+}
+
+.social p,
+.contact p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.contact h3 {
+  color: #6e001b;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  background: #460014;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .photo img {
+    max-height: 180px;
+    align-self: center;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-section h1 {
+    font-size: 28px;
+  }
+
+  .top-section p,
+  .info .tools,
+  .info .title {
+    font-size: 14px;
+  }
+
+  .portfolio-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info h2 {
+    font-size: 24px;
+  }
+}
+
+
+
