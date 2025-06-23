@@ -104,7 +104,8 @@ body {
 }
 
 .social, .contact {
-  flex: 1 1 200px;
+  flex: 1 1 100px;    
+  
 }
 
 .social p,
